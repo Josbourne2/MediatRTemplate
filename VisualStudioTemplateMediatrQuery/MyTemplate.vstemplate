@@ -1,0 +1,19 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>MediatrQuery</DefaultName>
+    <Name>Mediatr Query </Name>
+    <Description>Creates Mediatr Query, QueryValidator and Handler classes</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>    
+  </TemplateData>
+  <TemplateContent>
+    <CustomParameters>
+      <CustomParameter Name="$Queryname$" Value="$fileinputname$"/>  
+    </CustomParameters>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$QueryHandler.cs" ReplaceParameters="true">MyQueryHandler.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$Query.cs" ReplaceParameters="true">MyQuery.cs</ProjectItem>   
+    <ProjectItem SubType="" TargetFileName="$fileinputname$QueryValidator.cs" ReplaceParameters="true">MyQueryValidator.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$QueryResponse.cs" ReplaceParameters="true">MyQueryResponse.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

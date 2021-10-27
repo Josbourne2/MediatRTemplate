@@ -8,16 +8,16 @@ using Microsoft.Extensions.Logging;
 
 namespace $rootnamespace$
 {
-	public class $servicename$Handler : IRequestHandler<$servicename$Request, $servicename$Response>
+	public class $commandname$CommandHandler : IRequestHandler<$commandname$Command, $commandname$CommandResponse>
 	{
 
-		public $servicename$Handler()
+		public $commandname$CommandHandler()
 		{
 		}
 
-		public async Task<$servicename$Response> Handle($servicename$Request request, CancellationToken cancellationToken)
+		public async Task<$commandname$CommandResponse> Handle($commandname$Command request, CancellationToken cancellationToken)
 		{
-			var validator = new $servicename$RequestValidator();
+			var validator = new $commandname$CommandValidator();
             var result = validator.Validate(request);
 
             if (!result.IsValid)
