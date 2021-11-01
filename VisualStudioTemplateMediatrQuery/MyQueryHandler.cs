@@ -22,7 +22,7 @@ namespace $rootnamespace$
 
             if (!result.IsValid)
             {
-                throw new MediatRValidationException(result.ToString());
+                throw new ValidationException(result.ToString());
             }
 
 			throw new NotImplementedException();

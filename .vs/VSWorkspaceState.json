@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\VisualStudioTemplateMediatrCommand"
+    "\\VisualStudioTemplateMediatrCommand",
+    "\\VisualStudioTemplateMediatrQuery"
   ],
-  "SelectedNode": "\\VisualStudioTemplateMediatrCommand\\MyTemplate.vstemplate",
   "PreviewInSolutionExplorer": false
 }
