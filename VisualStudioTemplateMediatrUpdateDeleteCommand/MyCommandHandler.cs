@@ -9,16 +9,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace $rootnamespace$
 {
-	public class $Queryname$QueryHandler : IRequestHandler<$Queryname$Query, $Queryname$QueryResponse>
+	public class $commandname$CommandHandler : IRequestHandler<$commandname$Command>
 	{
 
-		public $Queryname$QueryHandler()
+		public $commandname$CommandHandler()
 		{
 		}
 
-		public async Task<$Queryname$QueryResponse> Handle($Queryname$Query request, CancellationToken cancellationToken)
+		public async Task<Unit> Handle($commandname$Command request, CancellationToken cancellationToken)
 		{
-			var validator = new $Queryname$QueryValidator();
+			var validator = new $commandname$CommandValidator();
             var result = validator.Validate(request);
 
             if (!result.IsValid)
@@ -26,7 +26,9 @@ namespace $rootnamespace$
                 throw new ValidationException(result.ToString());
             }
 
-			throw new NotImplementedException();
+			//Insert update code here
+
+			return Unit.Value;
 		}
 	}
 }

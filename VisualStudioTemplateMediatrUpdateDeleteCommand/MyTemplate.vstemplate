@@ -1,0 +1,18 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>MediatrCommand For Update and Delete</DefaultName>
+    <Name>Mediatr Command For Update and Delete</Name>
+    <Description>Creates Mediatr Command, CommandValidator and Handler classes</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>    
+  </TemplateData>
+  <TemplateContent>
+    <CustomParameters>
+      <CustomParameter Name="$commandname$" Value="$fileinputname$"/>  
+    </CustomParameters>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$CommandHandler.cs" ReplaceParameters="true">MyCommandHandler.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$Command.cs" ReplaceParameters="true">MyCommand.cs</ProjectItem>   
+    <ProjectItem SubType="" TargetFileName="$fileinputname$CommandValidator.cs" ReplaceParameters="true">MyCommandValidator.cs</ProjectItem>    
+  </TemplateContent>
+</VSTemplate>

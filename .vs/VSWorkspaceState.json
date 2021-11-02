@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\VisualStudioTemplateMediatrCommand",
-    "\\VisualStudioTemplateMediatrQuery"
+    "\\VisualStudioTemplateMediatrQuery",
+    "\\VisualStudioTemplateMediatrUpdateDeleteCommand"
   ],
-  "PreviewInSolutionExplorer": false
+  "PreviewInSolutionExplorer": true
 }
