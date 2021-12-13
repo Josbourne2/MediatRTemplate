@@ -8,8 +8,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace $rootnamespace$
 {
-	public class $commandname$Command : IRequest<$commandname$CommandResponse>
+	public class $commandname$Command : BaseRequest, IRequest<$commandname$CommandResponse>
 	{
 		public string Name { get; set; }
-}
+	}
 }

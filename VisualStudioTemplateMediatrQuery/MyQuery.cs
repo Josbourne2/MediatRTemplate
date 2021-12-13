@@ -7,8 +7,8 @@ using MediatR;
 
 namespace $rootnamespace$
 {
-	public class $Queryname$Query : IRequest<$Queryname$QueryResponse>
+	public class $Queryname$Query : BaseRequest, IRequest<$Queryname$QueryResponse>
 	{
 		public string Name { get; set; }
-}
+	}
 }
